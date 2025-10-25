@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid yellow; */
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+main h1 {
+    color: white;
+    font-weight: 400;
+}
+
+main h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.my-contacts {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem;
+    height: 150px;
+    /* border: 3px solid green; */
+}
+
+.my-contacts-email{
+    display: flex;
+    border: 2px solid white;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.my-contacts-linkedin {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.my-contacts-email a, .my-contacts-linkedin a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.my-contacts-email i, .my-contacts-linkedin i {
+    color: white;
+    font-size: 30px;
+}
+
+.send-message {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 3px solid blue; */
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.name-email-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* border: 3px solid red; */
+}
+
+.name-email-container input {
+    padding: 10px;
+    width: 40%;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    font-size: 17px;
+
+}
+
+.name-email-container input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+.send-message textarea {
+    border: 2px solid white;
+    background-color: transparent;
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    height: 80px;
+    font-size: 17px;
+}
+
+.send-message textarea::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+.submit-button {
+    padding: 15px;
+    width: 40%;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 17px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.main-send-message-header {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .my-contacts {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 817px) {
+    navbar {
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-menus {
+        /* margin-top: 20px; */
+        flex-direction: column;
+    }
+
+    .site-logo {
+        font-size: 20px;
+    }
+
+
+    main h1 {
+        font-size: 20px;
+    }
+
+    .my-contacts {
+        width: 100%;
+    }
+
+    .my-contacts a {
+        font-size: 15px;
+    }
+
+    .send-message, .send-message textarea{
+        width: 100%;
+    }
+    
+    .name-email-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-email-container input {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 350px) {
+    main h1 {
+        font-size: 20px;
+    }
+
+}
+
+
